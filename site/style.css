@@ -86,3 +86,9 @@ h3 {
 	color: #1f7610;
   font-weight: bold;
 }
+@media (min-width: 768px)
+{
+  .navbar-toggle{
+    display: none;
+  }
+}
