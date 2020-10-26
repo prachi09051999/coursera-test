@@ -1,76 +1,94 @@
-body{
-	background: plum;
-}
-body, *{
-margin: 0px;
-padding: 0px;
-font-family: "Times New Roman", Times, serif;
-box-sizing: border-box;
-}
-h1{
-	text-align: center;
-	color: #556789;
-	font-size: 28px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-.main-container{
-	position: relative;
-	margin-left: 3%;
-	margin-right: 1%;
-}
-.part1, .part2, .part3{
-	position: relative;
-	max-width: 31%;
-	display: inline;
-	float: left;
-	border: 2px solid #000;
-	padding: 5px 0px;
-	background: #e4eef5;
-	margin-right: 2%;
-	height: 150px;
-	overflow: scroll;
-}
-h2{
-	text-align: right;
-	color: #556789;
-	font-size: 20px;
-	display: block;
-}
-h2 > span{
-	border: 2px solid #000;
-	padding: 5px 10px;
-}
-#span1{
-	background: beige;
-}
-#span2{
-	background: pink;
-}
-#span3{
-	background: yellowgreen;
-}
-p{
-	color: #7788a3;
-	padding: 20px 10px;
+body {
+  font-size: 16px;
+  color: rgba(34, 33, 33, 0.884);
+  background-color: #F8E5E5;
+  font-family:"Times New Roman", Times, serif;
 }
 
-@media (max-width: 992px ) and (min-width: 768px){
-	.part3{
-		clear: both;
-		max-width: 100%;
-		margin-top: 2%
-	}
-	.part1 , .part2{
-		max-width: 48%;
-	}
+#header-nav {
+  background-color: #C39EA0;
+  border-radius: 0;
+  border: 0;
+  min-height: 70px;
 }
-@media (max-width: 767px){
-	.part1 , .part2, .part3{
-		clear: both;
-		max-width: 100%
-	}
-	.part2, .part3{
-		margin-top: 2%;
-	}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #FA255E;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list a { display: block; margin: 0;
+  color: #10EE67; 
+  font-weight: bold;
+}
+
+#nav-list a:hover {
+	width: 100%; 
+	 margin: 0;
+  background: rgb(236, 236, 209);
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+   margin-left: 0; 
+   margin-right: 0;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 3px solid rgb(165, 152, 152); 
+  padding: 2px;
+   width: auto;
+}
+.icon-bar{
+	background-color: #343a40;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+   align-content: center;
+  margin-left: 1020px;
+   margin-bottom: -88px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: rotate(90deg);
+}
+
+#page-title {
+	color: #25ced1;
+	margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#main-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-background {
+  height: auto;
+  padding: 20px 40px 20px 40px;
+  margin-bottom: 12px;
+  background-color: #F5B842;
+  overflow: hidden;
+}
+
+h3 {
+	color: #1f7610;
+  font-weight: bold;
+}
+@media (min-width: 768px)
+{
+  .navbar-toggle{
+    display: none;
+  }
 }
